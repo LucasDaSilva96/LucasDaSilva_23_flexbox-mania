@@ -1,340 +1,123 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-html {
-    font-size: 16px;
-    
-}
-:root {
-    --width: 68%;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigos - Inlämning #1</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <aside>
+                <img src="./img/zocom.png" alt="Logo" class="nav-logo">
+            </aside>
+            <nav class="nav--header--width nav--flex-row">
+                <a href="#" class="nav__link">Home</a>
+                <a href="#" class="nav__link">About</a>
+                <a href="#" class="nav__link">Services</a>
+                <a href="#" class="nav__link">Contact</a>
+                <!-- Hamburger menu -->
+                <svg class="hamburger-menu-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#000000" viewBox="0 0 256 256">
+                    <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path>
+                </svg>
+            </nav>
+        </div>
+    </header>
+    <!-- Main -->
+    <main>
+        <!-- Hero-section -->
+        <section class="hero">
+            <h2 class="hero__heading">Everything is designed</h2>
+            <button class="hero__button">pretty cool</button>
+        </section>
+        <!-- Card-section -->
+        <section class="card-container">
+            <!-- Card-1 -->
+            <article class="card-container__card card-container__card--big">
+                <img class="card-container__card__img groupImage" src="img/group.jpg" alt="Gruppbild" />
+                <h1 class="card-container__card__heading">Amigos</h1>
+                <p>I'm baby vexillologist normcore wayfarers, swag ramps humblebrag selvage butcher four dollar toast tousled four loko photo booth. DIY twee polaroid hella slow-carb art party deep v affogato chambray taxidermy chillwave venmo small batch.</p>
+            </article>
+            <!-- Card-2 -->
+            <article class="card-container__card">
+                <img class="card-container__card__img" src="img/andreas.jpg" alt="Andreas" />
+                <h1 class="card-container__card__heading">Andreas</h1>
+                <p>I'm baby vexillologist normcore wayfarers, swag ramps humblebrag selvage butcher four dollar toast tousled four loko photo booth. DIY twee polaroid hella slow-carb art party deep v affogato chambray taxidermy chillwave venmo small batch.</p>
+            </article>
+            <!-- Card-3 -->
+            <article class="card-container__card">
+                <img class="card-container__card__img" src="img/lucas.jpg" alt="Lucas" />
+                <h1 class="card-container__card__heading">Lucas</h1>
+                <p>I'm baby vexillologist normcore wayfarers, swag ramps humblebrag selvage butcher four dollar toast tousled four loko photo booth. DIY twee polaroid hella slow-carb art party deep v affogato chambray taxidermy chillwave venmo small batch.</p>
+            </article> 
+            <!-- Card-4 -->
+            <article class="card-container__card">
+                <img class="card-container__card__img" src="img/linnea.jpg" alt="Linnea" />
+                <h1 class="card-container__card__heading">Linnea</h1>
+                <p>I'm baby vexillologist normcore wayfarers, swag ramps humblebrag selvage butcher four dollar toast tousled four loko photo booth. DIY twee polaroid hella slow-carb art party deep v affogato chambray taxidermy chillwave venmo small batch.</p>
+            </article>
+            <!-- Card-5 -->
+            <article class="card-container__card">
+                <img class="card-container__card__img" src="img/jonathan.jpg" alt="Jonathan" />
+                <h1 class="card-container__card__heading">Jonathan</h1>
+                <p>I'm baby vexillologist normcore wayfarers, swag ramps humblebrag selvage butcher four dollar toast tousled four loko photo booth. DIY twee polaroid hella slow-carb art party deep v affogato chambray taxidermy chillwave venmo small batch.</p>
+            </article>  
+        </section>
+        <!-- Quote-section -->
+        <section class="quote">
+            <!-- quote__eclipse -->
+            <div class="quote__circle"></div>
+            <h2 class="quote__heading">"Holy smokes batman!"</h2>
 
-    --dark-gray-color: #333;
-    --light-gray-color: #BDBDBD;
-    --white-color: #FDFDFD;
-    --black-color: #000;
-    --footer-bg-color: background-color: #4F4F4F;
-}
+            <p>Robin</p>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div>
+            <h3 class="footer__heading footer__heading__nav">Nav</h3>
+            <nav class="nav nav--flex-column">
+                <div>
+                    <a href="#"class="nav__link">Home</a>
+                </div>
 
+                <div>
+                    <a href="#"class="nav__link">Services</a>
+                </div>
 
+                <div>
+                    <a href="#" class="nav__link">Contact</a>
+                </div>
+            </nav>
+        </div>
+        <article class="about">
+            <h3 class="footer__heading">About us</h3>
+            <p>Tech virtual drone online browser platform through in a system. But stream software offline. Professor install angel sector anywhere create at components smart. Document fab developers encryption smartphone powered, bespoke.</article>
+        </article>
+        <aside>
+            <h3 class="footer__heading">Social media</h3>
+            <div class="social-media">
+                <!-- Facebook -->
+                <svg class="social-media__icon social-media__icon--fb" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24">
+                    <path d="M12,2C6.477,2,2,6.477,2,12c0,5.013,3.693,9.153,8.505,9.876V14.65H8.031v-2.629h2.474v-1.749 c0-2.896,1.411-4.167,3.818-4.167c1.153,0,1.762,0.085,2.051,0.124v2.294h-1.642c-1.022,0-1.379,0.969-1.379,2.061v1.437h2.995 l-0.406,2.629h-2.588v7.247C18.235,21.236,22,17.062,22,12C22,6.477,17.523,2,12,2z"></path>
+                </svg>
 
-body {
-    background-color: var(--white-color);
-    color: #333;
-    margin: 0;
-    font-family: 'Ubuntu', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-/*************** Header *****************/
-header{
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 0px;
-    width: 100%;
-    background-color: var(--white-color);
-    box-shadow: rgba(189, 189, 189, 0.35) 0px 5px 15px;
-    z-index: 1000;
-}
-
-.nav-container{
-    width: var(--width);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.nav-logo{
-    width: 95px;
-    height: auto;
-}
-
-
-
-.nav--flex-row{
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
-.nav--header--width{
- width: 353px;
-
-}
-
-.nav__link{
-    text-decoration: none;
-    color: var(--black-color);
-    font-size: 1rem;
-    font-weight: 400;
-    border-bottom: 1px solid transparent ;
-    transition: all .3s ease;
-    cursor: pointer;
-}
-
-.nav--flex-row .nav__link:hover{
-    border-color: #000;
-}
-
-.hamburger-menu-icon{
-    display: none;
-    margin-left: auto; 
-    cursor: pointer;
-    transition: all .3s linear;
-}
-
-.hamburger-menu-icon:active{
-    transform: scale(1.1);
-}
-
-/**************** End of header***********/
-
-/*Main*/
-
-
-/* Hero */
-.hero {
-    font-size: 75px;
-    perspective: 7em;
-    perspective-origin: 50% -20%;
-    overflow: hidden;
-    width: 100%;
-    height: 540px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--dark-gray-color);
-    padding-top: 40px;
-}
-.hero__heading {
-    text-align: center;
-    color: var(--white-color);
-    font-size: 4.63rem;
-}
-.hero__button {
-    height: 71px;
-    width: 183px;
-    border-radius: 100px;
-    font-weight: bold;
-    padding: 20px 40px;
-    border: none;
-    font-size: 1.25rem;
-    cursor: pointer;
-}
-
-/* Cards */
-.card-container {
-    width: var(--width);
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 100px;
-    row-gap: 1.5rem;
-    font-size: .86rem;
-    font-family: 'Open Sans';
-}
-.card-container__card {
-    width: 32%;
-    border-bottom: 2px solid rgba(0,0,0,.3);
-    padding-bottom: 4rem;
-}
-.card-container__card--big {
-    width: 66%;
-}
-.card-container__card__img {
-    width: 100%;
-}
-.card-container__card__heading {
-    font-size: 1.6rem;
-    margin: .5rem 0;
-}
-
-/* Quote */
-.quote {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-    padding: 90px 0;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 20px;
-}
-.quote__circle {
-    background: url(../img/batman.jpg);
-    background-size: cover;
-    width: 140px;
-    height: 140px;
-    border-radius: 100px;
-}
-.quote__heading {
-    /* 1rem = 16px */
-    font-size: 2rem;
-    font-style: italic;
-    font-weight: 400;
-
-}
-
-/*Footer*/
-
-footer{
-    display: flex;
-    justify-content: space-around;
-    background-color: #4F4F4F;
-    min-height: 30vh;
-    padding: 6rem 8%;
-
-}
+                <!-- Youtube -->
+                <svg class="social-media__icon social-media__icon--yt" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24">
+                    <path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,15.464V8.536L16,12L10,15.464z"></path>
+                </svg>
 
 
-
-.footer__heading {
-    color: white;
-    font-size: 26px;
-    margin-bottom: 15px;
-}
-
-.nav--flex-column{
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-
-.nav--flex-column .nav__link:hover{
-    border-color: var(--white-color);
-}
-.nav a{
-    color:white ;
-    text-decoration: none;
-}
-
-
-
-.about{
-    width: 17%;
-}
-
-.about p{
-    color: white;
-    font-size: 1rem;
-    line-height: 25px;
-    font-weight: 400;
-
-}
-
-.social-media {
-    display: flex;
-    justify-content: space-between;
-    width: 200px;
-}
-.social-media__icon {
-    fill: white;
-    height: 50px;
-    transition: 350ms;
-}
-.social-media__icon--yt:hover {
-    fill: red;
-    cursor: pointer;
-}
-.social-media__icon--fb:hover {
-    fill: #0866ff;
-    cursor: pointer;
-}
-.social-media__icon--twitter:hover {
-    fill: #1da1f2;
-    cursor: pointer;
-}
-
-/***************************************/
-
-/********** Media-queries **************/
-@media(max-width: 1200px){
-
-    .about{
-        width: 50%;
-    }
-    
-}
-@media(max-width: 950px){
-    /* Header/Nav */
-    header{
-        padding: 20px;
-    }
-    .hamburger-menu-icon {
-        display: block;
-    }
-
-    .nav-container{
-        width: 100%;
-    }
-    .nav__link{
-        display: none;
-    }
-
-    /* Main */
-    
-    main {
-        padding: 1rem;
-
-    }
-
-    /* Hero */
-
-    .hero__heading {
-        font-size: 3rem;
-    }
-    
-    /* End of Hero */
-    
-    /* Cards */
-    
-    .card-container {
-        width: 100%;
-        margin: auto;
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        margin-top: 100px;
-        row-gap: 1.5rem;
-    }
-    .card-container__card {
-        width: 100%;
-    }
-
-    /* Change group image to a bigger one  */
-    .groupImage {
-        content: url("../img/group_big.jpg");
-    }
-
-    /* End of Cards */
-
-
-
-    /* Holy smokes */
-    .quote__heading {
-        font-size: 1.5rem;
-    }
-
-    
-    /* End of Holy smokes */
-    footer .nav, .footer__heading__nav {
-        display: none;
-    }
-    
-        
-     footer{
-        flex-direction: column;
-        gap: 30px;
-    }
-    .about{
-        width: 100%;
-    }
-}
-
-}
+                <!-- Twitter -->
+                <svg class="social-media__icon social-media__icon--twitter" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24">
+                    <path d="M22,3.999c-0.78,0.463-2.345,1.094-3.265,1.276c-0.027,0.007-0.049,0.016-0.075,0.023c-0.813-0.802-1.927-1.299-3.16-1.299 c-2.485,0-4.5,2.015-4.5,4.5c0,0.131-0.011,0.372,0,0.5c-3.353,0-5.905-1.756-7.735-4c-0.199,0.5-0.286,1.29-0.286,2.032 c0,1.401,1.095,2.777,2.8,3.63c-0.314,0.081-0.66,0.139-1.02,0.139c-0.581,0-1.196-0.153-1.759-0.617c0,0.017,0,0.033,0,0.051 c0,1.958,2.078,3.291,3.926,3.662c-0.375,0.221-1.131,0.243-1.5,0.243c-0.26,0-1.18-0.119-1.426-0.165 c0.514,1.605,2.368,2.507,4.135,2.539c-1.382,1.084-2.341,1.486-5.171,1.486H2C3.788,19.145,6.065,20,8.347,20 C15.777,20,20,14.337,20,8.999c0-0.086-0.002-0.266-0.005-0.447C19.995,8.534,20,8.517,20,8.499c0-0.027-0.008-0.053-0.008-0.08 c-0.003-0.136-0.006-0.263-0.009-0.329c0.79-0.57,1.475-1.281,2.017-2.091c-0.725,0.322-1.503,0.538-2.32,0.636 C20.514,6.135,21.699,4.943,22,3.999z"></path>
+                </svg>
+            </div>
+        </aside>
+    </footer>
+</body>
+</html>
 
