@@ -11,15 +11,14 @@
     <!-- Header -->
     <header>
         <div class="nav-container">
-
             <aside>
                 <img src="./img/zocom.png" alt="Logo" class="nav-logo">
             </aside>
-            <nav class="nav-header">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Contact</a>
+            <nav class="nav--header--width nav--flex-row">
+                <a href="#" class="nav__link">Home</a>
+                <a href="#" class="nav__link">About</a>
+                <a href="#" class="nav__link">Services</a>
+                <a href="#" class="nav__link">Contact</a>
                 <!-- Hamburger menu -->
                 <svg class="hamburger-menu-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#000000" viewBox="0 0 256 256">
                     <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path>
@@ -31,88 +30,89 @@
     <main>
         <!-- Hero-section -->
         <section class="hero">
-            <h2>Everything is designed</h2>
-            <button class="hero-button">pretty cool</button>
+            <h2 class="hero__heading">Everything is designed</h2>
+            <button class="hero__button">pretty cool</button>
         </section>
         <!-- Card-section -->
-        <section class="cardContainer">
+        <section class="card-container">
             <!-- Card-1 -->
-            <article class="bigCard">
-                <img class="groupImage" src="img/group.jpg" alt="Gruppbild" />
-                <h1>Amigos</h1>
+            <article class="card-container__card card-container__card--big">
+                <img class="card-container__card__img groupImage" src="img/group.jpg" alt="Gruppbild" />
+                <h1 class="card-container__card__heading">Amigos</h1>
                 <p>I'm baby vexillologist normcore wayfarers, swag ramps humblebrag selvage butcher four dollar toast tousled four loko photo booth. DIY twee polaroid hella slow-carb art party deep v affogato chambray taxidermy chillwave venmo small batch.</p>
             </article>
             <!-- Card-2 -->
-            <article class="smallCard">
-                <img src="img/andreas.jpg" alt="Andreas" />
-                <h1>Andreas</h1>
+            <article class="card-container__card">
+                <img class="card-container__card__img" src="img/andreas.jpg" alt="Andreas" />
+                <h1 class="card-container__card__heading">Andreas</h1>
                 <p>I'm baby vexillologist normcore wayfarers, swag ramps humblebrag selvage butcher four dollar toast tousled four loko photo booth. DIY twee polaroid hella slow-carb art party deep v affogato chambray taxidermy chillwave venmo small batch.</p>
             </article>
             <!-- Card-3 -->
-            <article class="smallCard">
-                <img src="img/lucas.jpg" alt="Lucas" />
-                <h1>Lucas</h1>
+            <article class="card-container__card">
+                <img class="card-container__card__img" src="img/lucas.jpg" alt="Lucas" />
+                <h1 class="card-container__card__heading">Lucas</h1>
                 <p>I'm baby vexillologist normcore wayfarers, swag ramps humblebrag selvage butcher four dollar toast tousled four loko photo booth. DIY twee polaroid hella slow-carb art party deep v affogato chambray taxidermy chillwave venmo small batch.</p>
             </article> 
             <!-- Card-4 -->
-            <article class="smallCard">
-                <img src="img/linnea.jpg" alt="Linnea" />
-                <h1>Linnea</h1>
+            <article class="card-container__card">
+                <img class="card-container__card__img" src="img/linnea.jpg" alt="Linnea" />
+                <h1 class="card-container__card__heading">Linnea</h1>
                 <p>I'm baby vexillologist normcore wayfarers, swag ramps humblebrag selvage butcher four dollar toast tousled four loko photo booth. DIY twee polaroid hella slow-carb art party deep v affogato chambray taxidermy chillwave venmo small batch.</p>
             </article>
             <!-- Card-5 -->
-            <article class="smallCard">
-                <img src="img/jonathan.jpg" alt="Jonathan" />
-                <h1>Jonathan</h1>
+            <article class="card-container__card">
+                <img class="card-container__card__img" src="img/jonathan.jpg" alt="Jonathan" />
+                <h1 class="card-container__card__heading">Jonathan</h1>
                 <p>I'm baby vexillologist normcore wayfarers, swag ramps humblebrag selvage butcher four dollar toast tousled four loko photo booth. DIY twee polaroid hella slow-carb art party deep v affogato chambray taxidermy chillwave venmo small batch.</p>
             </article>  
         </section>
         <!-- Quote-section -->
         <section class="quote">
-            <div class="eclipse"></div>
-            <h2>"Holy smokes batman!"</h2>
+            <!-- quote__eclipse -->
+            <div class="quote__circle"></div>
+            <h2 class="quote__heading">"Holy smokes batman!"</h2>
+
             <p>Robin</p>
         </section>
     </main>
     <!-- Footer -->
     <footer>
-        <nav class="nav">
-            <h3>Nav</h3>
-            <div class="home">
-                <a href="#">Home</a>
-            </div><br>
-            <div class="about">
-                <a href="#">About</a>
-            </div><br>
+        <div>
+            <h3 class="footer__heading footer__heading__nav">Nav</h3>
+            <nav class="nav nav--flex-column">
+                <div>
+                    <a href="#"class="nav__link">Home</a>
+                </div>
 
-            <div class="service">
-                <a href="#">Services</a>
-            </div><br>
+                <div>
+                    <a href="#"class="nav__link">Services</a>
+                </div>
 
-            <div class="contact">
-                <a href="#">Contact</a>
-            </div>
-        </nav>
+                <div>
+                    <a href="#" class="nav__link">Contact</a>
+                </div>
+            </nav>
+        </div>
         <article class="about">
-            <h3>About us</h3>
+            <h3 class="footer__heading">About us</h3>
             <p>Tech virtual drone online browser platform through in a system. But stream software offline. Professor install angel sector anywhere create at components smart. Document fab developers encryption smartphone powered, bespoke.</article>
         </article>
         <aside>
-            <h3>Social media</h3>
+            <h3 class="footer__heading">Social media</h3>
             <div class="social-media">
                 <!-- Facebook -->
-                <svg class="socialIcons fb-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24">
+                <svg class="social-media__icon social-media__icon--fb" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24">
                     <path d="M12,2C6.477,2,2,6.477,2,12c0,5.013,3.693,9.153,8.505,9.876V14.65H8.031v-2.629h2.474v-1.749 c0-2.896,1.411-4.167,3.818-4.167c1.153,0,1.762,0.085,2.051,0.124v2.294h-1.642c-1.022,0-1.379,0.969-1.379,2.061v1.437h2.995 l-0.406,2.629h-2.588v7.247C18.235,21.236,22,17.062,22,12C22,6.477,17.523,2,12,2z"></path>
                 </svg>
 
                 <!-- Youtube -->
-                <svg class="socialIcons yt-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24">
+                <svg class="social-media__icon social-media__icon--yt" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24">
                     <path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,15.464V8.536L16,12L10,15.464z"></path>
                 </svg>
 
 
                 <!-- Twitter -->
-                <svg class="socialIcons twitter-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24">
+                <svg class="social-media__icon social-media__icon--twitter" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24">
                     <path d="M22,3.999c-0.78,0.463-2.345,1.094-3.265,1.276c-0.027,0.007-0.049,0.016-0.075,0.023c-0.813-0.802-1.927-1.299-3.16-1.299 c-2.485,0-4.5,2.015-4.5,4.5c0,0.131-0.011,0.372,0,0.5c-3.353,0-5.905-1.756-7.735-4c-0.199,0.5-0.286,1.29-0.286,2.032 c0,1.401,1.095,2.777,2.8,3.63c-0.314,0.081-0.66,0.139-1.02,0.139c-0.581,0-1.196-0.153-1.759-0.617c0,0.017,0,0.033,0,0.051 c0,1.958,2.078,3.291,3.926,3.662c-0.375,0.221-1.131,0.243-1.5,0.243c-0.26,0-1.18-0.119-1.426-0.165 c0.514,1.605,2.368,2.507,4.135,2.539c-1.382,1.084-2.341,1.486-5.171,1.486H2C3.788,19.145,6.065,20,8.347,20 C15.777,20,20,14.337,20,8.999c0-0.086-0.002-0.266-0.005-0.447C19.995,8.534,20,8.517,20,8.499c0-0.027-0.008-0.053-0.008-0.08 c-0.003-0.136-0.006-0.263-0.009-0.329c0.79-0.57,1.475-1.281,2.017-2.091c-0.725,0.322-1.503,0.538-2.32,0.636 C20.514,6.135,21.699,4.943,22,3.999z"></path>
                 </svg>
             </div>
