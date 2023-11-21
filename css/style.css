@@ -15,11 +15,6 @@ html {
     --white-color: #FDFDFD;
     --black-color: #000;
     --footer-bg-color: background-color: #4F4F4F;
-
-    /* --cubeColor: rgba(0, 255, 242, 0.637);  */
-    --cubeColor: rgba(0,0,0,.2); 
-    --rotateSpeed: 30s;  
-    --bounceSpeed: 1.5s;
 }
 
 
@@ -56,14 +51,20 @@ header{
     height: auto;
 }
 
-.nav-header{
+
+
+.nav--flex-row{
     display: flex;
-    width: 353px;
     align-items: center;
     gap: 30px;
 }
 
-.nav-header a{
+.nav--header--width{
+ width: 353px;
+
+}
+
+.nav__link{
     text-decoration: none;
     color: var(--black-color);
     font-size: 1rem;
@@ -73,7 +74,7 @@ header{
     cursor: pointer;
 }
 
-.nav-header a:hover{
+.nav--flex-row .nav__link:hover{
     border-color: #000;
 }
 
@@ -109,12 +110,12 @@ header{
     background-color: var(--dark-gray-color);
     padding-top: 40px;
 }
-.hero > h2 {
+.hero__heading {
     text-align: center;
     color: var(--white-color);
     font-size: 4.63rem;
 }
-.hero-button {
+.hero__button {
     height: 71px;
     width: 183px;
     border-radius: 100px;
@@ -126,7 +127,7 @@ header{
 }
 
 /* Cards */
-.cardContainer {
+.card-container {
     width: var(--width);
     margin: auto;
     display: flex;
@@ -137,58 +138,47 @@ header{
     font-size: .86rem;
     font-family: 'Open Sans';
 }
-
-.bigCard {
-    width: 66%;
-}
-.smallCard {
+.card-container__card {
     width: 32%;
-}
-article img {
-    width: 100%;
-}
-.cardContainer h1 {
-    font-size: 1.6rem;
-    margin: .5rem 0;
-}
-.cardContainer article {
     border-bottom: 2px solid rgba(0,0,0,.3);
     padding-bottom: 4rem;
 }
-
+.card-container__card--big {
+    width: 66%;
+}
+.card-container__card__img {
+    width: 100%;
+}
+.card-container__card__heading {
+    font-size: 1.6rem;
+    margin: .5rem 0;
+}
 
 /* Quote */
-.quote{
+.quote {
     display: flex;
     flex-direction: column;
-    align-content: center;
-    gap: 32px;
-    padding-top: 90px;
-    padding-bottom: 90px;
     align-items: center;
-    
+    gap: 32px;
+    padding: 90px 0;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
 }
-.eclipse{
+.quote__circle {
     background: url(../img/batman.jpg);
     background-size: cover;
     width: 140px;
     height: 140px;
     border-radius: 100px;
 }
-.quote > h2 {
+.quote__heading {
     /* 1rem = 16px */
     font-size: 2rem;
     font-style: italic;
     font-weight: 400;
 
 }
-.quote > p{
-    font-weight: bold;
-    font-style: italic;
-    font-size: 20px;
-    text-align: center;
-}
-
 
 /*Footer*/
 
@@ -201,38 +191,29 @@ footer{
 
 }
 
-footer h3{
+
+
+.footer__heading {
     color: white;
     font-size: 26px;
     margin-bottom: 15px;
 }
 
-.nav{
-    width: 10%;
+.nav--flex-column{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
-.nav a{
-    border-bottom: 1px solid transparent;
-    transition: all 0.3s ease-in-out;
-    padding: 2px 0;
-}
-
-.nav a:hover{
-    /* font-size: 1em; */
+.nav--flex-column .nav__link:hover{
     border-color: var(--white-color);
-
 }
-
-footer a{
+.nav a{
     color:white ;
     text-decoration: none;
 }
 
-.socialIcons {
-    fill: white;
-    height: 50px;
-    transition: 350ms;
-}
+
 
 .about{
     width: 17%;
@@ -246,21 +227,25 @@ footer a{
 
 }
 
-.social-media{
+.social-media {
     display: flex;
     justify-content: space-between;
     width: 200px;
-
 }
-.yt-icon:hover {
+.social-media__icon {
+    fill: white;
+    height: 50px;
+    transition: 350ms;
+}
+.social-media__icon--yt:hover {
     fill: red;
     cursor: pointer;
 }
-.fb-icon:hover {
+.social-media__icon--fb:hover {
     fill: #0866ff;
     cursor: pointer;
 }
-.twitter-icon:hover {
+.social-media__icon--twitter:hover {
     fill: #1da1f2;
     cursor: pointer;
 }
@@ -268,19 +253,26 @@ footer a{
 /***************************************/
 
 /********** Media-queries **************/
+@media(max-width: 1200px){
+
+    .about{
+        width: 50%;
+    }
+    
+}
 @media(max-width: 950px){
     /* Header/Nav */
     header{
         padding: 20px;
     }
     .hamburger-menu-icon {
-    display: block;
+        display: block;
     }
 
     .nav-container{
         width: 100%;
     }
-    .nav-header > a{
+    .nav__link{
         display: none;
     }
 
@@ -293,7 +285,7 @@ footer a{
 
     /* Hero */
 
-    .hero > h2 {
+    .hero__heading {
         font-size: 3rem;
     }
     
@@ -301,7 +293,7 @@ footer a{
     
     /* Cards */
     
-    .cardContainer {
+    .card-container {
         width: 100%;
         margin: auto;
         display: flex;
@@ -310,8 +302,7 @@ footer a{
         margin-top: 100px;
         row-gap: 1.5rem;
     }
-
-    .bigCard, .smallCard {
+    .card-container__card {
         width: 100%;
     }
 
@@ -325,32 +316,24 @@ footer a{
 
 
     /* Holy smokes */
-    .quote > h2 {
+    .quote__heading {
         font-size: 1.5rem;
     }
-    .quote > p {
-        width: 6.75rem;
-        height: 6.75rem;
-    }
+
     
     /* End of Holy smokes */
-
-}
-
-@media(max-width: 1100px){
-
-footer .nav{
-    display: none;
-}
-
+    footer .nav, .footer__heading__nav {
+        display: none;
+    }
     
-footer{
-    flex-direction: column;
-    gap: 30px;
-}
-
-.about{
-    width: 100%;
+        
+     footer{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .about{
+        width: 100%;
+    }
 }
 
 }
